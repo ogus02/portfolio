@@ -11,10 +11,18 @@ app.get('/', (req, res) => {
     fs.readFile('index.html', (err, data) => {
         res.setHeader('Content-Type', 'text/html');
         res.send(data);
-  });
+    });
+
+});
+
+app.get('/stylesheet.css', (req, res) => {
+
+    fs.readFile('stylesheet.css', (err, data) => {
+        res.send(data);
+    });
 
 });
 
 app.listen(PORT, () => {
-console.log(`Example app listening at http://localhost:${PORT}`);
+    console.log(`Example app listening at http://localhost:${PORT}`);
 });
