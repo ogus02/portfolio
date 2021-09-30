@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Logo */
+
+.logo{
+    font-family: monospace;
+    color:#c303fe;
+    font-size: 50px;
+    margin-left: 69px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 34px;
+    letter-spacing: 3px;
+}
+
+.logo2{
+    color:white;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+}
+
+.navlist{
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+
+.navlist li{
+    float: right;
+    list-style: none;
+}
+
+.navlist a{
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 14px 14px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover{
+    font-weight: bold;
+    color: #c303fe;
+}
+
+.navlinehover {
+    transition: 0.3s ease;
+    background: #2A2A2A;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 4px solid #2A2A2A;
+    padding: 20px 0;
+    margin: 0 20px;
+  }
+
+.navlinehover:hover {
+    border-bottom: 4px solid #c303fe;
+}
+
+.click-logo{
+    text-decoration: none;
+    color: #c303fe;
+}
+
+.active{
+    border-bottom: 4px solid #c303fe;
+}
+
+footer{
+    background: #2A2A2A;
+    height: 100px;
+}
+
+.footer-right{
+    float: left;
+    width: 800px;
+    margin-top: 40px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.footer-right p{
+    display: inline;
+}
+
+.social-icons{
+    float: left;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.social-icons a{
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgb(22, 22, 22);
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+}
+
+.social-icons a:hover{
+    background-color: #c303fe;
+}
+
+p a:hover{
+    color: rgb(0, 190, 253);
+}
+
+.copy{
+    margin-left: 200px;
+}
