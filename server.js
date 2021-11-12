@@ -6,18 +6,12 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 8042;
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
 
-    fs.readFile('index.html', (err, data) => {
+    fs.readFile('public/index.html', (err, data) => {
         res.setHeader('Content-Type', 'text/html');
-        res.send(data);
-    });
-
-});
-
-app.get('/stylesheet.css', (req, res) => {
-
-    fs.readFile('stylesheet.css', (err, data) => {
         res.send(data);
     });
 
